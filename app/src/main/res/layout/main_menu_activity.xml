@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Current Goal:"
+            android:id="@+id/goal_static_tvb"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*goal*"
+            android:id="@+id/goal_dynamic_tvb"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*pounds*"
+            android:id="@+id/weight_dynamic_tvb"
+            android:layout_alignTop="@+id/weight_static_tvb"
+            android:layout_toLeftOf="@+id/ate_tvb"
+            android:layout_toStartOf="@+id/ate_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pounds"
+            android:id="@+id/weight_static_tvb"
+            android:layout_below="@+id/goal_dynamic_tvb"
+            android:layout_marginTop="35dp"
+            android:layout_alignRight="@+id/goal_dynamic_tvb"
+            android:layout_alignEnd="@+id/goal_dynamic_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="&quot;I Just Ate&quot;"
+            android:id="@+id/ate_tvb"
+            android:layout_marginBottom="61dp"
+            android:layout_above="@+id/worked_tvb"
+            android:layout_alignRight="@+id/goal_dynamic_tvb"
+            android:layout_alignEnd="@+id/goal_dynamic_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="&quot;I Just Worked Out&quot;"
+            android:id="@+id/worked_tvb"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*steps*"
+            android:id="@+id/steps_dynamic_tv"
+            android:layout_marginTop="65dp"
+            android:layout_below="@+id/worked_tvb"
+            android:layout_toLeftOf="@+id/goal_dynamic_tvb"
+            android:layout_toStartOf="@+id/goal_dynamic_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*consumed*"
+            android:id="@+id/consumed_dynamic_tv"
+            android:layout_marginTop="54dp"
+            android:layout_below="@+id/steps_dynamic_tv"
+            android:layout_alignLeft="@+id/weight_dynamic_tvb"
+            android:layout_alignStart="@+id/weight_dynamic_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*burned*"
+            android:id="@+id/burned_dynamic_tv"
+            android:layout_below="@+id/consumed_dynamic_tv"
+            android:layout_alignRight="@+id/goal_static_tvb"
+            android:layout_alignEnd="@+id/goal_static_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Steps"
+            android:id="@+id/steps_static_tv"
+            android:layout_alignTop="@+id/steps_dynamic_tv"
+            android:layout_toRightOf="@+id/ate_tvb"
+            android:layout_toEndOf="@+id/ate_tvb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Calories Consumed"
+            android:id="@+id/consumed_static_tv"
+            android:layout_alignTop="@+id/consumed_dynamic_tv"
+            android:layout_toRightOf="@+id/steps_dynamic_tv"
+            android:layout_toEndOf="@+id/steps_dynamic_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Calories Burned"
+            android:id="@+id/burned_static_tv"
+            android:layout_alignTop="@+id/burned_dynamic_tv"
+            android:layout_alignLeft="@+id/consumed_static_tv"
+            android:layout_alignStart="@+id/consumed_static_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Progression History"
+            android:id="@+id/history_tvb"
+            android:layout_below="@+id/burned_dynamic_tv"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
