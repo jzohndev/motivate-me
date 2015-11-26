@@ -3,44 +3,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/a5">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Meal Catalog"
-        android:id="@+id/button"
-        android:layout_below="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Custom Meal"
-        android:id="@+id/button"
-        android:layout_below="@+id/button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:id="@+id/button"
-        android:layout_below="@+id/listView"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,9 +11,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignBottom="@+id/textView2" />
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,34 +30,12 @@
         android:layout_below="@+id/spinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="or"
-        android:id="@+id/textView"
-        android:layout_below="@+id/listView"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modify"
-        android:id="@+id/button2"
-        android:layout_below="@+id/listView"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/delete_activity_bt" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/button"
+        android:id="@+id/servings_meals_et"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="56dp"
@@ -108,7 +48,70 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Servings"
         android:id="@+id/textView4"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:layout_alignBottom="@+id/servings_meals_et"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="mealsListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add_activity_bt"
+        android:layout_marginTop="172dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/custom_activity_bt"
+        android:layout_alignStart="@+id/custom_activity_bt" />
+
+    <Button
+        android:onClick="mealsListNavigation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/delete_activity_bt"
+        android:layout_alignBottom="@+id/add_activity_bt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="mealsListNavigation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:id="@+id/modify_activity_bt"
+        android:layout_alignBottom="@+id/add_activity_bt"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <Button
+        android:onClick="mealsListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Meal Catalog"
+        android:id="@+id/catalog_activity_bt"
+        android:layout_below="@+id/delete_activity_bt"
+        android:layout_alignLeft="@+id/servings_meals_et"
+        android:layout_alignStart="@+id/servings_meals_et" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="or"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/catalog_activity_bt"
+        android:layout_toLeftOf="@+id/catalog_activity_bt"
+        android:layout_toStartOf="@+id/catalog_activity_bt" />
+
+    <Button
+        android:onClick="mealsListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Custom Meal"
+        android:id="@+id/custom_activity_bt"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
 </RelativeLayout>

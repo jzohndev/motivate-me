@@ -16,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.github.jzohndev.meals.MealsList"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.meals.MealsCatalog"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.meals.MealsCommit"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.meals.MealsCustom"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.activity.ActivityList"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.activity.ActivityCustom"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.activity.ActivityCommit"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.github.jzohndev.activity.ActivityCatalog"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>

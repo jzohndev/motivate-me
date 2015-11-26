@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Added Food"
+        android:text="Added Activities"
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -22,7 +21,7 @@
         android:layout_above="@+id/remove_activity_commit_bt" />
 
     <Button
-        android:onClick="mealsCommitNavigation"
+        android:onClick="activityCommitNavigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remove Selected"
@@ -34,7 +33,7 @@
         android:layout_marginStart="54dp" />
 
     <Button
-        android:onClick="mealsCommitNavigation"
+        android:onClick="activityCommitNavigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Commit"
@@ -44,11 +43,11 @@
         android:layout_toEndOf="@+id/remove_activity_commit_bt" />
 
     <Button
-        android:onClick="mealsCommitNavigation"
+        android:onClick="activityCommitNavigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Another Meal"
-        android:id="@+id/add_another_meal_bt"
+        android:text="Add Another Activity"
+        android:id="@+id/add_another_activity_commit_bt"
         android:layout_below="@+id/remove_activity_commit_bt"
         android:layout_alignRight="@+id/commit_activity_commit_bt"
         android:layout_alignEnd="@+id/commit_activity_commit_bt" />

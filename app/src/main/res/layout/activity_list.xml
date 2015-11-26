@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dialog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Activity List"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/delete_activity_bt" />
+
+    <Button
+        android:onClick="activityListNavigation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/delete_activity_bt"
+        android:layout_alignTop="@+id/modify_activity_bt"
+        android:layout_toRightOf="@+id/modify_activity_bt"
+        android:layout_toEndOf="@+id/modify_activity_bt" />
+
+    <Button
+        android:onClick="activityListNavigation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:id="@+id/modify_activity_bt"
+        android:layout_alignTop="@+id/add_activity_bt"
+        android:layout_toRightOf="@+id/add_activity_bt"
+        android:layout_toEndOf="@+id/add_activity_bt" />
+
+    <Button
+        android:onClick="activityListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Activity Catalog"
+        android:id="@+id/catalog_activity_bt"
+        android:layout_below="@+id/delete_activity_bt"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <Button
+        android:onClick="activityListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Custom Activity"
+        android:id="@+id/custom_activity_bt"
+        android:layout_below="@+id/catalog_activity_bt"
+        android:layout_alignLeft="@+id/catalog_activity_bt"
+        android:layout_alignStart="@+id/catalog_activity_bt" />
+
+    <Button
+        android:onClick="activityListNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add_activity_bt"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/custom_activity_bt"
+        android:layout_toStartOf="@+id/custom_activity_bt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="or"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/listView"
+        android:layout_toRightOf="@+id/delete_activity_bt"
+        android:layout_toEndOf="@+id/delete_activity_bt" />
+
+</RelativeLayout>

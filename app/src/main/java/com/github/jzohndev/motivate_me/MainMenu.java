@@ -1,43 +1,40 @@
 package com.github.jzohndev.motivate_me;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.github.jzohndev.activity.ActivityList;
+import com.github.jzohndev.meals.MealsList;
+import com.github.jzohndev.motivate_me.R;
+
 public class MainMenu extends AppCompatActivity {
-    private TextView iJustAte;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu_activity);
-
-        iJustAte = (TextView) findViewById(R.id.ate_tvb);
-        addMeal();
     }
 
-    public void addMeal(){
-        iJustAte.setOnClickListener(
-            new View.OnClickListener() {
+    //starts an activity if "I Just Ate" or "I Just Worked Out" are clicked
+    public void mainMenuNavigation(View iJust){
+        Intent i;
 
-                @Override
-                public void onClick(View v) {
-                    setContentView(R.layout.meals_list);
-            }
-        });
+        switch (iJust.getId()) {
+            case R.id.ate_tvb:
+                i = new Intent(this, MealsList.class);
+                startActivity(i);
+                break;
+            case R.id.worked_tvb:
+                i = new Intent(this, ActivityList.class);
+                startActivity(i);
+                break;
+        }
     }
-
-
-
-
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

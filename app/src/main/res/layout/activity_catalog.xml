@@ -2,11 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Meal Catalog"
+        android:text="Activity Catalog"
         android:id="@+id/textView5"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -37,62 +38,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="*food*"
+        android:text="*activity*"
         android:id="@+id/activity_name_catalog_tv"
-        android:layout_marginBottom="72dp"
-        android:layout_above="@+id/add_meals_catalog_bt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp" />
+        android:layout_above="@+id/textView23"
+        android:layout_toLeftOf="@+id/textView23"
+        android:layout_toStartOf="@+id/textView23" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="*#servings*"
-        android:id="@+id/calories_dynamic_tv"
-        android:layout_below="@+id/listView3"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Servings"
-        android:id="@+id/calories_catalog_static_tv"
-        android:layout_below="@+id/listView3"
-        android:layout_alignLeft="@+id/add_meals_catalog_bt"
-        android:layout_alignStart="@+id/add_meals_catalog_bt" />
-
-    <Button
-        android:onClick="mealsCatalogNavigation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Meal"
-        android:id="@+id/add_meals_catalog_bt"
+        android:text="Calories Per Hour"
+        android:id="@+id/textView22"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="35dp" />
+        android:layout_marginBottom="98dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Calories"
-        android:id="@+id/calories_static_tv"
-        android:layout_below="@+id/calories_catalog_static_tv"
-        android:layout_alignLeft="@+id/calories_catalog_static_tv"
-        android:layout_alignStart="@+id/calories_catalog_static_tv" />
+        android:text="*#calories*"
+        android:id="@+id/textView23"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toLeftOf="@+id/textView22"
+        android:layout_toStartOf="@+id/textView22" />
 
-    <TextView
+    <Button
+        android:onClick="activityCatalogNavigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="*calories*"
-        android:id="@+id/textView21"
-        android:layout_below="@+id/calories_dynamic_tv"
-        android:layout_alignLeft="@+id/calories_dynamic_tv"
-        android:layout_alignStart="@+id/calories_dynamic_tv" />
+        android:text="Add Activity"
+        android:id="@+id/add_activity_catalog_bt"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
