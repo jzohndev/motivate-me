@@ -105,6 +105,7 @@
             android:layout_alignEnd="@+id/goal_static_tvb" />
 
         <TextView
+            android:onClick="mainMenuNavigation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"

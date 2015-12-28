@@ -48,6 +48,10 @@
             android:name="com.github.jzohndev.activity.ActivityCatalog"
             android:label="@string/app_name">
         </activity>
+        <activity
+            android:name="com.github.jzohndev.pedometer.Pedometer"
+            android:label="test">
+        </activity>
     </application>
 
 </manifest>

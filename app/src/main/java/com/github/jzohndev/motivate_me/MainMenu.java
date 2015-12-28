@@ -11,8 +11,10 @@ import android.widget.TextView;
 import com.github.jzohndev.activity.ActivityList;
 import com.github.jzohndev.meals.MealsList;
 import com.github.jzohndev.motivate_me.R;
+import com.github.jzohndev.pedometer.Pedometer;
 
 public class MainMenu extends AppCompatActivity {
+    private Pedometer pm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,10 @@ public class MainMenu extends AppCompatActivity {
                 break;
             case R.id.worked_tvb:
                 i = new Intent(this, ActivityList.class);
+                startActivity(i);
+                break;
+            case R.id.steps_static_tv:
+                i = new Intent(this, Pedometer.class);
                 startActivity(i);
                 break;
         }

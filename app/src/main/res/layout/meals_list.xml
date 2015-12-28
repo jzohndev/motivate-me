@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="or"
-        android:id="@+id/textView"
+        android:id="@+id/textview"
         android:layout_alignBottom="@+id/catalog_activity_bt"
         android:layout_toLeftOf="@+id/catalog_activity_bt"
         android:layout_toStartOf="@+id/catalog_activity_bt" />
@@ -110,8 +110,8 @@
         android:layout_height="wrap_content"
         android:text="Create Custom Meal"
         android:id="@+id/custom_activity_bt"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_toLeftOf="@+id/textView"
-        android:layout_toStartOf="@+id/textView" />
+        android:layout_alignBottom="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:layout_toStartOf="@+id/textview" />
 
 </RelativeLayout>
